@@ -2,7 +2,9 @@
     <div class="col">
         <div class="form-group">
             <label for=""></label>
-            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Buscar Artista">
+            <input #termino type="text" class="form-control" (keyup)="buscar(termino.value)" aria-describedby="helpId" placeholder="Buscar Artista">
         </div>
     </div>
 </div>
+<app-loading class="m5" *ngIf="loading"></app-loading>
+<app-tarjetas [items]="artists"></app-tarjetas>

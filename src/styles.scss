@@ -9,6 +9,10 @@ hr {
     border-color: white;
 }
 
+table {
+    color: white !important;
+}
+
 .puntero {
     cursor: pointer;
 }
@@ -29,6 +33,11 @@ hr {
 
 .btn-outline-success {
     margin-left: 5px;
+}
+
+.artist-thumb {
+    width: 150px;
+    height: 150px;
 }
 
 .img-thumb {

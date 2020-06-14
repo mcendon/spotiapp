@@ -9,6 +9,11 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 import { HttpClientModule } from '@angular/common/http';
+import { NoimagePipe } from './pipe/noimage.pipe';
+import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
+import { ShowbadgePipe } from './pipe/showbadge.pipe';
+import { LoadingComponent } from './components/shared/loading/loading.component';
+import { ErrorComponent } from './components/shared/error/error.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     SearchComponent,
     ArtistaComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe,
+    TarjetasComponent,
+    ShowbadgePipe,
+    LoadingComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
